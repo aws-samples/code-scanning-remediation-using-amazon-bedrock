@@ -1,0 +1,36 @@
+{
+  "name": "lambda_handler",
+  "parameters": [
+    {
+      "name": "branch_name",
+      "description": "Branch name of code repository that needs to be scanned",
+      "required": "True",
+      "type": "string"
+    },
+    {
+      "name": "file_extensions_to_exclude",
+      "description": "File extensions like needs to be excluded from scanning",
+      "required": "True",
+      "type": "string"
+    },
+    {
+      "name": "folders_to_exclude",
+      "description": "Folder names to exclude from scanning",
+      "required": "True",
+      "type": "string"
+    },
+    {
+      "name": "new_remediated_branch_name",
+      "description": "New branch name to push remediated code",
+      "required": "True",
+      "type": "string"
+    },
+    {
+      "name": "repository_url",
+      "description": "Code repository url",
+      "required": "True",
+      "type": "string"
+    }
+  ],
+  "requireConfirmation": "ENABLED"
+}
